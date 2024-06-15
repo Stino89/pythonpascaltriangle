@@ -69,4 +69,9 @@ def num_within(x, a, b):
     Returns:
     True if x is within the range [a, b], False otherwise.
     """
-    return x in range(a, b + 1)
+    return x in range(a, b + 1)  # Use range to check if x is within the inclusive range
+
+# Test
+print(num_within(3, 2, 4))  # Output: True
+print(num_within(3, 1, 3))  # Output: True
+print(num_within(10, 2, 5)) # Output: False
