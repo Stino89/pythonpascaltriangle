@@ -33,3 +33,40 @@ def mult_list(lst):
         for i in lst[1:]:
             prod *= i
     return prod
+# Test mult_list function
+print(mult_list([1, 2, 3]))  # Output: 6
+print(mult_list([]))         # Output: 0
+print(mult_list([15]))       # Output: 15
+
+# Function to reverse a string
+def rev_string(my_str):
+    """
+    Reverses a given string.
+
+    Parameters:
+    my_str: The string to reverse.
+
+    Returns:
+    The reversed string.
+    """
+    return my_str[::-1]
+
+# Test rev_string function
+print(rev_string(""))         # Output: ""
+print(rev_string("apple"))    # Output: "elppa"
+print(rev_string("mt string"))  # Output: "gnirts tm"
+
+# Function to check whether a number falls within a given range (inclusive)
+def num_within(x, a, b):
+    """
+    Checks if a number is within a given range (inclusive).
+
+    Parameters:
+    x: The number to check.
+    a: The beginning of the range.
+    b: The end of the range.
+
+    Returns:
+    True if x is within the range [a, b], False otherwise.
+    """
+    return x in range(a, b + 1)
